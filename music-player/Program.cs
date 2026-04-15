@@ -2,11 +2,12 @@
 using Terminal.Gui.App;
 using Terminal.Gui.ViewBase;
 using Terminal.Gui.Views;
+using System.IO;
 
 using IApplication app = Application.Create ();
 app.Init ();
 
-using Window window = new () { Title = "Hello World (Esc to quit)" };
+using Window window = new () { Title = "Music Player" };
 Label label = new ()
 {
     Text = "Hello, Terminal.Gui v2!",
